@@ -1,0 +1,27 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #333333;
+  --color-primary: #4a5568;
+  --color-secondary: #718096;
+  --color-accent: #a0aec0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a202c;
+    --color-text: #e2e8f0;
+    --color-primary: #a0aec0;
+    --color-secondary: #718096;
+    --color-accent: #4a5568;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
